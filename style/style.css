@@ -569,13 +569,12 @@ hgroup.description h2 {
 }
 .nav { float: right; }
 .nav-list {
-  width: 648px;
   height: 80px;
   line-height: 80px;
 }
 .nav-list > li {
   float: left;
-  width: 108px;
+  width: 120px;
 }
 .nav-list > li > a {
   position: relative;
@@ -2088,32 +2087,70 @@ hgroup.description h2 {
 }
 
 /*===首页新增的东西===*/
+.business-heading {
+    position: relative;
+    padding-bottom: 15px;
+}
+.business-heading:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #0068b7;
+}
+.business-heading .cn {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: #4e4e4e;
+}
+.business-heading .cn:after {
+    position: absolute;
+    bottom: 3px;
+    left: 90px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #0068b7;
+}
+.business-heading .en {
+    display: block;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 50px;
+    color: #4e4e4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 .home-business-type-list {
   float: left;
-  border: 1px solid #dedede;
-  width: 140px;
+  width: 180px;
   margin-top: 60px;
+  height: 280px;
 }
 .home-business-type-list a {
   display: block;
-  height: 48px;
-  line-height: 48px;
-  border-bottom: 1px solid #aeaeae;
+  height: calc(280px / 4);
+  line-height: calc(280px / 4 - 1px);
+  border: 1px solid #dedede;
   padding-left: 15px;
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
 }
-.home-business-type-list a:last-of-type {
-   border-bottom-width: 0;
- }
 .home-business-type-list a.active,
 .home-business-type-list a:hover {
-  border-bottom-color: #0068b7;
-  color: #0068b7;
+  border-color: #0068b7;
+  background-color: #0068b7;
+  color: #fff;
 }
 .all-type-business {
   float: right;
-  width: calc(100% - 180px);
+  width: calc(100% - 220px);
 }
 .home-business-classify {
   display: none;
@@ -2160,37 +2197,26 @@ hgroup.description h2 {
   font-size: 50px;
 }
 .home-business-list .recommend-business figure {
-  width: 270px;
-  height: 310px;
+  width: 250px;
+  height: 280px;
 }
 .home-business-list .recommend-business .recommend-business-text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 310px;
-  padding-left: 300px;
+  height: 280px;
+  padding-left: 270px;
 }
 .recommend-business-text h3 {
   position: relative;
   height: 90px;
   line-height: 30px;
-  /*padding-top: 15px;
-  padding-bottom: 15px;*/
   font-size: 20px;
   font-weight: normal;
   color: #4e4e4e;
   overflow: hidden;
 }
-/*.recommend-business-text h3:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 40px;
-  background-color: #4e4e4e;
-}*/
 .recommend-business-text p {
   height: 126px;
   margin-top: 21px;
@@ -2217,39 +2243,48 @@ hgroup.description h2 {
 }
 .home-business-list .hot-business {
   float: right;
-  width: 440px;
+  width: 390px;
+}
+.hot-business li {
+    height: calc(280px / 3 - 8px);
+    margin-bottom: 12px;
+}
+.hot-business li:last-of-type {
+    margin-bottom: 0;
 }
 .hot-business li a {
   display: block;
-  height: 104px;
-  padding: 20px 15px;
-  line-height: 30px;
+  height: 100%;
+  padding: 0 15px;
+  line-height: 28px;
   border: 2px solid transparent;
+  overflow: hidden;
 }
 .hot-business li a:hover { border-color: #a8a8a8; }
 .hot-business li a time {
-  width: 80px;
+  width: 70px;
   float: left;
   text-align: center;
+  margin-top: 12px;
 }
 .hot-business li a time span.day {
   display: block;
-  font-size: 30px;
+  font-size: 26px;
   color: #4e4e4e;
 }
 .hot-business li a time span.month {
   display: block;
-  font-size: 30px;
+  font-size: 26px;
   color: #a8a8a8;
 }
 .hot-business li a span.month {
   display: block;
-  font-size: 30px;
+  font-size: 26px;
   color: #a8a8a8;
 }
 .hot-business li a h3 {
   float: left;
-  width: 310px;
+  width: 270px;
   margin-left: 10px;
   border-left: 2px solid #a8a8a8;
   padding-left: 15px;
@@ -2419,4 +2454,129 @@ hgroup.description h2 {
 .business-classify > .more:hover {
   color: #666;
   border-color: #aeaeae;
+}
+/*===视频素材分享===*/
+.video-classify {
+  width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0;
+  text-align: center;
+}
+.video-classify a {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 50px;
+  line-height: 48px;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  color: #666;
+}
+.video-classify a:hover,
+.video-classify a.active {
+  border-color: #0068b7;
+  color: #0068b7;
+}
+.video-list {
+  width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  column-count: 3;
+  column-gap: 10px;
+}
+.video-list a {
+  position: relative;
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+.video-list a img {
+  display: block;
+  width: 100%;
+}
+.video-list a time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.video-list a .icon-video {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  width: 1.5em;
+  height: 1.2em;
+  color: #fff;
+  background-color: currentColor;
+  border-radius: .3em;
+}
+.video-list a .icon-video:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.4em;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: .6em solid transparent;
+  border-right: .6em solid;
+  border-bottom: .6em solid transparent;
+}
+.video-pagination-wrapper {
+  text-align: center;
+}
+/*===素材视频详情===*/
+.skyview-video {
+  display: block;
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto 25px;
+}
+.video-details-info {
+  width: 1140px;
+  margin: 20px auto 20px;
+}
+.video-details-info > div {
+  margin-bottom: 15px;
+}
+.video-details-info .video-heading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.4;
+}
+.video-details-info .upload-time {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.video-details-info .duration {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.video-details-info .keyword {
+  font-size: 14px;
+  margin-right: -.5em;
+  margin-left: -.5em;
+  color: #000;
+}
+.video-details-info .keyword dt {
+  display: block;
+  font-size: inherit;
+  font-weight: 500;
+  margin: 0 .5em 15px;
+}
+.video-details-info .keyword dd {
+  display: inline-block;
+  padding: .2em .5em;
+  margin: 0 .5em 10px;
+  border: 1px solid;
 }

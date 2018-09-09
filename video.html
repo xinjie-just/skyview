@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>视频素材分享_斯凯威</title>
+        <meta name="keywords" content="斯凯威传媒，致力于宣传片拍摄、无人机航拍、VR全景拍摄等新媒体手段的内容制作。">
+        <meta name="description" content="斯凯威传媒，致力于宣传片拍摄、无人机航拍、VR全景拍摄等新媒体手段的内容制作。斯凯威一直坚持科技创新的理念，将自主研发的无人机结合特种拍摄手法，投入影视航拍，斯凯威参与了大量的电影、广告、记录片、宣传片等的拍摄。">
+        <meta name="author" content="lixinjie">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header class="header media-header">
+            <figure class="logo">
+                <a href="home.html" title="回到首页"><img src="images/logo.png" alt="skyview logo"></a>
+            </figure>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <!-- 对当前页面的链接添加 active 类名 -->
+                    <li>
+                        <a href="#" title="首页">
+                            <strong>首页</strong>
+                            <strong>home</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="新闻">
+                            <strong>新闻</strong>
+                            <strong>news</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="传媒">
+                            <strong>传媒</strong>
+                            <strong>media</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="体验店">
+                            <strong>体验店</strong>
+                            <strong>store</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="无人机">
+                            <strong>无人机</strong>
+                            <strong>uav</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="联系我们">
+                            <strong>联系我们</strong>
+                            <strong>contact</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="视频素材分享" class="active">
+                            <strong>视频素材分享</strong>
+                            <strong>video</strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>    
+        </header>
+        <main class="main video-main">
+            <div class="video-classify">
+                <a href="#" title="推荐" class="active">推荐</a>
+                <a href="#" title="自然">自然</a>
+                <a href="#" title="城市">城市</a>
+                <a href="#" title="动物">动物</a>
+                <a href="#" title="人物">人物</a>
+                <a href="#" title="食物">食物</a>
+                <a href="#" title="水下">水下</a>
+            </div>
+            <!--上面 .view-button 添加上 active 后，下面的 video-list 也要加上 view-->
+            <div class="video-list" id="videoList">
+                <a href="#" title="" class="video-item">
+                    <img src="images/video-img1.jpg" alt="">
+                    <time class="duration">00:18</time>
+                    <i class="icon-video"></i>
+                </a>
+                <a href="#" title="" class="video-item">
+                    <img src="images/video-img2.jpg" alt="">
+                    <time class="duration">00:08</time>
+                    <i class="icon-video"></i>
+                </a>
+                <a href="#" title="" class="video-item">
+                    <img src="images/video-img3.jpg" alt="">
+                    <time class="duration">00:28</time>
+                    <i class="icon-video"></i>
+                </a>
+                <a href="#" title="" class="video-item">
+                    <img src="images/video-img4.jpg" alt="">
+                    <time class="duration">00:28</time>
+                    <i class="icon-video"></i>
+                </a>
+            </div>
+            <div class="video-pagination-wrapper">
+                <ul class="pagination">
+                    <!-- 当前页面时，给 li 添加 active 类 -->
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer store-footer">
+            <small>Copyrights &copy; 2015 All Rights Reserved by WorldLink & Company.</small>
+        </footer>
+        <script src="script/jquery-3.1.0.min.js"></script>
+        <script src="script/skyview-plugin.js"></script>
+    </body>
+</html>
